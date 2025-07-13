@@ -1,10 +1,3 @@
-//
-//  FlashCardAppApp.swift
-//  FlashCardApp
-//
-//  Created by Natan Oliveira on 13/07/25.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -12,7 +5,9 @@ import SwiftData
 struct FlashCardAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Deck.self,
+            Flashcard.self,
+            User.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
