@@ -1,0 +1,14 @@
+# Xcode user data
+*.xcuserstate
+*.xcuserdata/
+*.xcuserdatad/
+
+# macOS system files
+.DS_Store
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Xcode build
+DerivedData/
