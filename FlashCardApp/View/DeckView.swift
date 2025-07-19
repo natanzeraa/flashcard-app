@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct DeckStruct: Identifiable {
+struct DeckStruct: Identifiable, Hashable {
     let id = UUID()
     let title: String
     let caption: String
@@ -63,7 +63,7 @@ struct DeckCard: View {
 struct DeckView: View {
     @StateObject private var viewModel = DeckViewModel()
     @State private var isNavigating = false
-
+ 
     var body: some View {
         NavigationStack {
             VStack {
@@ -86,7 +86,10 @@ struct DeckView: View {
                     }
                 }
                 .navigationDestination(isPresented: $isNavigating) {
-                    AddNewFlashCardView()
+                    AddNewDeckView(onAddDeck: { newDeck in
+                        // ação para adicionar o deck, ex:
+                        print("Deck novo criado: \(newDeck.title)")
+                    })
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
