@@ -1,31 +1,33 @@
 import SwiftUI
 
 struct AddNewFlashCardView: View {
-    @State private var question = "Digite sua pergunta"
-    @State private var answer = "Insira sua resposta"
-    @State private var deck = "Qual deck deseja atribuir esse flashcard?"
-
+    @State private var question = ""
+    @State private var answer = ""
+     
+    
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            HStack {
-                Text("Adicionar novo flashcard")
-                    .bold()
-                    .font(Font.title2)
-            }
-            .padding(.horizontal)
+            Text("Adicionar novo flashcard")
+                .bold()
+                .font(.title2)
+                .padding(.top)
             
             ScrollView {
                 VStack(spacing: 16) {
-                    TextField("Pegunta", text: $question)
-                        .padding()
-                    TextField("Resposta", text: $answer)
-                        .padding()
-                    TextField("Deck", text: $deck)
-                        .padding()
+                    CustomInputField(
+                        systemIcon: "questionmark.circle",
+                        placeholder: "Digite sua pergunta",
+                        text: $question
+                    )
+                    
+                    CustomInputField(
+                        systemIcon: "text.bubble",
+                        placeholder: "Insira sua resposta",
+                        text: $answer
+                    )
                 }
-                .padding(.top)
+                .padding()
             }
-            
         }
     }
 }
