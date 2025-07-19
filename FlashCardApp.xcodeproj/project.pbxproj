@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		32E2C7442E23D8E00017528A /* FlashCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E2C7442E23D8E00017528A /* FlashCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FlashCardApp.app; path = "/Users/natanoliveira/Documents/FlashCardApp/build/Debug-iphoneos/FlashCardApp.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		32E2C7462E23D8E00017528A /* FlashCardApp */ = {
+		321B5EF72E2B183F00ECAAC6 /* FlashCardApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FlashCardApp;
 			sourceTree = "<group>";
@@ -32,17 +32,8 @@
 		32E2C73B2E23D8E00017528A = {
 			isa = PBXGroup;
 			children = (
-				32E2C7462E23D8E00017528A /* FlashCardApp */,
-				32E2C7452E23D8E00017528A /* Products */,
+				321B5EF72E2B183F00ECAAC6 /* FlashCardApp */,
 			);
-			sourceTree = "<group>";
-		};
-		32E2C7452E23D8E00017528A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32E2C7442E23D8E00017528A /* FlashCardApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +52,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				32E2C7462E23D8E00017528A /* FlashCardApp */,
+				321B5EF72E2B183F00ECAAC6 /* FlashCardApp */,
 			);
 			name = FlashCardApp;
 			packageProductDependencies = (
@@ -95,7 +86,7 @@
 			mainGroup = 32E2C73B2E23D8E00017528A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 32E2C7452E23D8E00017528A /* Products */;
+			productRefGroup = 32E2C73B2E23D8E00017528A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
